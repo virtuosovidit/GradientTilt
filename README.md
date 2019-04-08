@@ -16,5 +16,5 @@ A custom UIMotionEffect Class is created to update the CAGradientLayer:
     }
    
 
-The result looks something like this:
+The result looks something like this:  
 ![Gradient Tilt Demo](http://viditb.com/gradientTilt.gif)
