@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreGraphics
 
 class ViewController: UIViewController {
 
@@ -19,7 +18,7 @@ class ViewController: UIViewController {
         gradientView.mask = label
     }
     
-    @IBOutlet weak var gradientView: GradientView!
+    @IBOutlet weak var gradientView: UIView!
     @IBOutlet weak var label: UILabel!
     
     func addGradient() {
@@ -48,8 +47,6 @@ class ViewController: UIViewController {
         gradient.startPoint = CGPoint(x: 0.5, y: 1)
         
         gradientView.layer.addSublayer(gradient)
-        
-        gradientView.gradient = gradient
     }
     
     func update() {
@@ -78,8 +75,6 @@ class GradientMotionEffect: UIMotionEffect {
         return nil
     }
     
-}
 
-class GradientView: UIView {
-    var gradient: CAGradientLayer?
+    
 }
